@@ -1,0 +1,16 @@
+@use './doublee-tokens.scss';
+@use './doublee-prism.scss';
+
+#storybook-explorer-tree {
+	button {
+		font-size: var(--font-size-sm);
+		font-weight: 530;
+	}
+
+	.sidebar-item {
+		button, a {
+			font-size: var(--font-size-sm);
+			font-weight: 400;
+		}
+	}
+}

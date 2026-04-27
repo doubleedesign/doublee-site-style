@@ -1,0 +1,23 @@
+@use './doublee-tokens.scss';
+@use './doublee-prism.scss';
+
+.sbdocs-content {
+
+	.sbdocs-title {
+		font: var(--font-xl);
+		font-family: var(--font-family-accent);
+	}
+
+	.sbdocs-subtitle {
+		font: var(--font-md);
+	}
+
+
+	p, li {
+		font-size: var(--font-size-base);
+	}
+
+	.docblock-argstable-body {
+		font-size: var(--font-size-sm);
+	}
+}

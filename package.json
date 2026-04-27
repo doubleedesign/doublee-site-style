@@ -1,0 +1,9 @@
+{
+	"name": "@doubleedesign/doublee-site-style",
+	"description": "Shared CSS, Storybook theme, and other portfolio-site-related stuff to enable easy sharing across my personal sites",
+	"author": "Leesa Ward",
+	"license": "UNLICENSED",
+	"version": "1.0.0",
+	"main": "index.js",
+	"private": true
+}

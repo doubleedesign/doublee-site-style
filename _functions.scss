@@ -1,0 +1,45 @@
+// Replacements for SASS colour functions that will automatically adopt replacement vanilla CSS variables.
+// Calculations are added so that the syntax for their use is the same as SCSS,
+// e.g. darken by 10% would usually mean 90% for color-mix, but this function means we can still write it as 10%.
+// To use, ensure @use 'path/to/functions' as *; is at the top of your SCSS file.
+@function lighten($colorName, $amount) {
+	@return color-mix(in srgb, var(--color-#{$colorName}) (100% - $amount), white);
+}
+
+@function darken($colorName, $amount) {
+	@return color-mix(in srgb, var(--color-#{$colorName}) (100% - $amount), black);
+}
+
+// Other custom theme colour functions
+@function transparentize-color($colorName, $amount) {
+	@return rgb(from var(--color-#{$colorName}) r g b / $amount);
+}
+
+@function mute-color($colorName, $saturationChange: 0.5, $lightenAmount: 0.15) {
+	$greyed: color-mix(in srgb, var(--color-#{$colorName}) 85%, gray 15%);
+	$l: calc(l + $lightenAmount);
+	$c: calc(c * (1 - $saturationChange));
+	$h: calc(h);
+	@return oklch(from $greyed $l $c $h);
+}
+
+@function complement-of($colorName, $offset: 0) {
+	@return hsl(from var(--color-#{$colorName}) calc(h + (180 + $offset)) s l);
+}
+
+// Sizing calculation functions
+@function step-up($steps) {
+	$result: 1rem;
+	@for $i from 1 through $steps {
+		$result: calc(#{$result} * var(--typescale));
+	}
+	@return $result;
+}
+
+@function step-down($steps) {
+	$result: 1rem;
+	@for $i from 1 through $steps {
+		$result: calc(#{$result} / var(--typescale));
+	}
+	@return $result;
+}

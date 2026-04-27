@@ -1,0 +1,67 @@
+@import 'https://doublee.dev/fonts/fonts.css';
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600;700&display=swap");
+@layer doublee-tokens {
+  :root {
+    --font-family-body: 'Berkeley Old Style', 'Californian FB', Georgia, serif;
+    --font-family-headings: 'Copernicus New Cond', sans-serif;
+    --font-family-accent: 'Neue Montreal', 'Neue Helvetica', Helvetica, Arial, sans-serif;
+    --font-family-labels: 'Neue Montreal', 'Neue Helvetica', Helvetica, Arial, sans-serif;
+    --font-family-code: 'Fira Code', Consolas, system-ui-monospace, monospace;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --line-height-base: 1.45;
+    --line-height-headings: 1.2;
+    --typescale: 1.2;
+  }
+  @media (min-width: 768px) {
+    :root {
+      --typescale: 1.25;
+    }
+  }
+  :root {
+    --font-size-sm: 0.9rem;
+    --font-size-base: 1rem;
+    --font-size-md: calc(1rem * var(--typescale));
+    --font-size-lg: calc(calc(1rem * var(--typescale)) * var(--typescale));
+    --font-size-xl: calc(calc(calc(1rem * var(--typescale)) * var(--typescale)) * var(--typescale));
+    --font-size-xxl: calc(calc(calc(calc(1rem * var(--typescale)) * var(--typescale)) * var(--typescale)) * var(--typescale));
+    --font-size-display: calc(calc(calc(calc(calc(calc(1rem * var(--typescale)) * var(--typescale)) * var(--typescale)) * var(--typescale)) * var(--typescale)) * var(--typescale));
+    --font-sm: var(--font-weight-normal) var(--font-size-sm) var(--font-family-labels);
+    --font-base: var(--font-weight-normal) var(--font-size-base) var(--font-family-body);
+    --font-md: var(--font-weight-medium) var(--font-size-md)/var(--line-height-headings) var(--font-family-accent);
+    --font-lg: var(--font-weight-semibold) var(--font-size-lg)/var(--line-height-headings) var(--font-family-headings);
+    --font-xl: var(--font-weight-semibold) var(--font-size-xl)/var(--line-height-headings) var(--font-family-headings);
+    --font-xxl: var(--font-weight-semibold) var(--font-size-xxl)/var(--line-height-headings) var(--font-family-headings);
+    --font-display: var(--font-weight-semibold) var(--font-size-display)/var(--line-height-headings) var(--font-family-headings);
+    --font-labels: var(--font-weight-medium) var(--font-size-sm) var(--font-family-labels);
+    --font-captions: var(--font-weight-normal) var(--font-size-sm) var(--font-family-labels);
+    --spacing-xxs: calc(calc(calc(calc(calc(calc(1rem / var(--typescale)) / var(--typescale)) / var(--typescale)) / var(--typescale)) / var(--typescale)) / var(--typescale));
+    --spacing-xs: calc(calc(calc(calc(1rem / var(--typescale)) / var(--typescale)) / var(--typescale)) / var(--typescale));
+    --spacing-sm: calc(calc(1rem / var(--typescale)) / var(--typescale));
+    --spacing-md: 1rem;
+    --spacing-lg: calc(calc(1rem * var(--typescale)) * var(--typescale));
+    --spacing-xl: calc(calc(calc(calc(1rem * var(--typescale)) * var(--typescale)) * var(--typescale)) * var(--typescale));
+    --spacing-xxl: calc(calc(calc(calc(calc(calc(1rem * var(--typescale)) * var(--typescale)) * var(--typescale)) * var(--typescale)) * var(--typescale)) * var(--typescale));
+    --color-primary: #845ec2;
+    --color-secondary: #0abfa0;
+    --color-accent: #c92c5a;
+    --color-info: #24a8e1;
+    --color-warning: #ffc75f;
+    --color-success: #0abfa0;
+    --color-error: #ff775f;
+    --color-light: color-mix(in srgb, var(--color-primary) 15%, white);
+    --color-dark: color-mix(in srgb, var(--color-primary) 40%, black);
+    --color-white: #ffffff;
+    --color-body-text: #181825;
+    --color-primary-muted: oklch(from color-mix(in srgb, var(--color-primary) 85%, gray 15%) calc(l + 0.15) calc(c * 0.5) calc(h));
+    --color-secondary-muted: oklch(from color-mix(in srgb, var(--color-secondary) 85%, gray 15%) calc(l + 0.15) calc(c * 0.5) calc(h));
+    --color-light-muted: oklch(from color-mix(in srgb, var(--color-light) 85%, gray 15%) calc(l + 0.07) calc(c * 0.6) calc(h));
+    --color-dark-muted: oklch(from color-mix(in srgb, var(--color-dark) 85%, gray 15%) calc(l + 0.07) calc(c * 0.6) calc(h));
+    --color-body-text-muted: oklch(from color-mix(in srgb, var(--color-body-text) 85%, gray 15%) calc(l + 0.35) calc(c * 0.8) calc(h));
+  }
+}
+
+/*# sourceMappingURL=doublee-tokens.css.map */

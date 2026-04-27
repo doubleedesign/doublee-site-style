@@ -1,0 +1,34 @@
+@mixin blockquote-base {
+	font: var(--font-md);
+	text-align: center;
+	padding: var(--spacing-md) 0;
+	margin: var(--spacing-lg) 0;
+	color: var(--color-body-text-muted);
+	border-block: 1px dotted currentColor;
+	position: relative;
+
+	&:before,
+	&:after {
+		font-size: var(--font-size-display);
+		position: absolute;
+		line-height: 1;
+		height: 0.5em;
+		font-family: var(--font-family-headings);
+		color: var(--color-body-text-muted);
+		background: var(--body-background, white);
+	}
+
+	&:before {
+		content: '“';
+		top: 0;
+		left: 0;
+		transform: translateX(-50%) translateY(-25%);
+	}
+
+	&:after {
+		content: '”';
+		bottom: 0;
+		right: 0;
+		transform: translateX(50%) translateY(65%);
+	}
+}

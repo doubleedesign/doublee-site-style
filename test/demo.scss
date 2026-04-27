@@ -1,0 +1,112 @@
+body {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+
+@mixin truncate {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-clamp: 1;
+	width: 90cqw;
+}
+
+.swatch {
+	display: block;
+	border: 1px solid #CCC;
+	container-type: inline-size;
+
+	&__caption {
+		text-align: start;
+
+		&__label, &__value {
+			display: block;
+			font-family: var(--font-family-labels);
+			margin: var(--spacing-xxs);
+		}
+
+		&__label {
+			color: var(--color-body-text);
+			font: var(--font-labels);
+			text-transform: lowercase;
+		}
+
+		&__value {
+			font: var(--font-captions);
+			font-size: 0.9em;
+			@include truncate;
+		}
+	}
+}
+
+#palette {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: var(--spacing-md);
+	margin-block-end: var(--spacing-xl);
+
+	color-swatch {
+
+		&[color="primary"] {
+			grid-column: span 2;
+		}
+
+		&[color="light"],
+		&[color="dark"],
+		&[color="light-muted"],
+		&[color="dark-muted"] {
+			grid-column: span 2;
+		}
+	}
+
+	.swatch {
+		&__color {
+			height: 100px;
+		}
+	}
+}
+
+#typography {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-md);
+	margin-block-end: var(--spacing-xl);
+
+	font-swatch {
+		.swatch {
+			&__text {
+				@include truncate;
+				width: 100cqw;
+				box-sizing: border-box;
+				padding: var(--spacing-sm);
+			}
+
+			&__label {
+			}
+		}
+	}
+}
+
+#formatting {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-md);
+	margin-block-end: var(--spacing-xl);
+
+	.swatch {
+		> *:not(span) {
+			padding-inline: var(--spacing-xs);
+		}
+
+		&__caption {
+
+			&__label {
+				background: var(--color-white);
+				text-transform: capitalize;
+				margin: 0;
+				padding-block: var(--spacing-xs);
+			}
+		}
+	}
+}

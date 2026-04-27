@@ -1,0 +1,142 @@
+@charset "UTF-8";
+@layer doublee-common {
+  :root {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-kerning: normal;
+  }
+  body {
+    color: var(--color-body-text);
+    font: var(--font-base);
+    line-height: var(--line-height-base);
+  }
+  h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--font-weight-semibold);
+  }
+  h1, h2 {
+    margin-block-end: var(--spacing-sm);
+  }
+  h3, h4, h5, h6 {
+    margin-block: var(--spacing-xs);
+  }
+  h1 {
+    font: var(--font-xxl);
+  }
+  h2 {
+    font: var(--font-xl);
+    margin-block-start: var(--spacing-xl);
+  }
+  h3 {
+    font: var(--font-lg);
+    font-weight: var(--font-weight-medium);
+    margin-block-start: var(--spacing-lg);
+  }
+  h4, h5, h6 {
+    font: var(--font-md);
+    font-size: var(--font-size-base);
+  }
+  p, ul, ol {
+    margin-block: var(--spacing-md);
+  }
+  ul, ol {
+    margin-inline-start: var(--font-size-base);
+  }
+  pre, code {
+    background: var(--color-light-muted);
+    font-family: var(--font-family-code);
+    font-size-adjust: ex-height 0.45;
+    display: inline-block;
+    padding-inline: var(--spacing-xxs);
+    line-height: 1.1;
+  }
+  blockquote {
+    font: var(--font-md);
+    text-align: center;
+    padding: var(--spacing-md) 0;
+    margin: var(--spacing-lg) 0;
+    color: var(--color-body-text-muted);
+    border-block: 1px dotted currentColor;
+    position: relative;
+  }
+  blockquote:before, blockquote:after {
+    font-size: var(--font-size-display);
+    position: absolute;
+    line-height: 1;
+    height: 0.5em;
+    font-family: var(--font-family-headings);
+    color: var(--color-body-text-muted);
+    background: var(--body-background, white);
+  }
+  blockquote:before {
+    content: "“";
+    top: 0;
+    left: 0;
+    transform: translateX(-50%) translateY(-25%);
+  }
+  blockquote:after {
+    content: "”";
+    bottom: 0;
+    right: 0;
+    transform: translateX(50%) translateY(65%);
+  }
+  figure {
+    margin: var(--spacing-lg) 0;
+  }
+  figure figcaption {
+    font: var(--font-captions);
+    color: var(--color-body-text-muted);
+    text-align: center;
+    margin-block-start: var(--spacing-sm);
+  }
+  figure:has(> blockquote) {
+    font: var(--font-md);
+    text-align: center;
+    padding: var(--spacing-md) 0;
+    margin: var(--spacing-lg) 0;
+    color: var(--color-body-text-muted);
+    border-block: 1px dotted currentColor;
+    position: relative;
+  }
+  figure:has(> blockquote):before, figure:has(> blockquote):after {
+    font-size: var(--font-size-display);
+    position: absolute;
+    line-height: 1;
+    height: 0.5em;
+    font-family: var(--font-family-headings);
+    color: var(--color-body-text-muted);
+    background: var(--body-background, white);
+  }
+  figure:has(> blockquote):before {
+    content: "“";
+    top: 0;
+    left: 0;
+    transform: translateX(-50%) translateY(-25%);
+  }
+  figure:has(> blockquote):after {
+    content: "”";
+    bottom: 0;
+    right: 0;
+    transform: translateX(50%) translateY(65%);
+  }
+  figure:has(> blockquote) blockquote {
+    border: 0;
+    margin: 0;
+    padding-block: 0;
+    margin-block-end: var(--spacing-xs);
+  }
+  figure:has(> blockquote) blockquote:before, figure:has(> blockquote) blockquote:after {
+    content: none;
+  }
+  hr {
+    color: var(--color-body-text-muted);
+    opacity: 0.4;
+    margin: var(--spacing-lg) 0;
+  }
+}
+
+/*# sourceMappingURL=doublee-common.css.map */
