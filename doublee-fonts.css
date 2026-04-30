@@ -1,0 +1,83 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600;700&display=swap");
+@font-face {
+  font-family: "Copernicus New Cond";
+  src: url("https://doublee.dev/fonts/CopernicusNewCond-130.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Copernicus New Cond";
+  src: url("https://doublee.dev/fonts/CopernicusNewCond-090.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("https://doublee.dev/fonts/PPNeueMontreal-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("https://doublee.dev/fonts/PPNeueMontreal-Book.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("https://doublee.dev/fonts/PPNeueMontreal-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("https://doublee.dev/fonts/PPNeueMontreal-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("https://doublee.dev/fonts/PPNeueMontreal-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+/**
+ * @license
+ * MyFonts Webfont Build ID 3867246, 2020-12-16T11:57:38-0500
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: ITC Berkeley Old Style Pro Book Italic by ITC
+ * URL: https://www.myfonts.com/collections/itc-foundry
+
+ * Webfont: ITC Berkeley Old Style Pro Book by ITC
+ * URL: https://www.myfonts.com/collections/itc-foundry
+
+ * Webfont: ITC Berkeley Old Style Pro Bold by ITC
+ * URL: https://www.myfonts.com/collections/itc-foundry
+
+ * © 2026 MyFonts Inc. */
+@font-face {
+  font-family: "Berkeley Old Style";
+  font-weight: 700;
+  src: url("https://doublee.dev/fonts/BerkeleyOldStyleBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Berkeley Old Style";
+  font-style: italic;
+  font-weight: 400;
+  src: url("https://doublee.dev/fonts/BerkeleyOldStyleItalic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Berkeley Old Style";
+  src: url("https://doublee.dev/fonts/BerkeleyOldStyleBook.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=doublee-fonts.css.map */

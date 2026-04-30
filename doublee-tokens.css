@@ -1,5 +1,3 @@
-@import 'https://doublee.dev/fonts/fonts.css';
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600;700&display=swap");
 @layer doublee-tokens {
   :root {
     --font-family-body: 'Berkeley Old Style', 'Californian FB', Georgia, serif;
