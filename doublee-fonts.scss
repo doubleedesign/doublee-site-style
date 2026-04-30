@@ -18,6 +18,8 @@
 	src: url('https://doublee.dev/fonts/PPNeueMontreal-Light.woff2') format('woff2');
 	font-weight: 300;
 	font-style: normal;
+	/*! Custom adjustments to suit the combination of fonts */
+	ascent-override: 85%;
 }
 
 @font-face {
@@ -25,6 +27,8 @@
 	src: url('https://doublee.dev/fonts/PPNeueMontreal-Book.woff2') format('woff2');
 	font-weight: 400;
 	font-style: normal;
+	/*! Custom adjustments to suit the combination of fonts */
+	ascent-override: 85%;
 }
 
 @font-face {
@@ -32,6 +36,8 @@
 	src: url('https://doublee.dev/fonts/PPNeueMontreal-Italic.woff2') format('woff2');
 	font-weight: 400;
 	font-style: italic;
+	/*! Custom adjustments to suit the combination of fonts */
+	ascent-override: 85%;
 }
 
 @font-face {
@@ -39,6 +45,8 @@
 	src: url('https://doublee.dev/fonts/PPNeueMontreal-Medium.woff2') format('woff2');
 	font-weight: 500;
 	font-style: normal;
+	/*! Custom adjustments to suit the combination of fonts */
+	ascent-override: 85%;
 }
 
 @font-face {
@@ -46,6 +54,8 @@
 	src: url('https://doublee.dev/fonts/PPNeueMontreal-SemiBold.woff2') format('woff2');
 	font-weight: 600;
 	font-style: normal;
+	/*! Custom adjustments to suit the combination of fonts */
+	ascent-override: 85%;
 }
 
 
@@ -71,20 +81,28 @@
  * © 2026 MyFonts Inc. */
 @font-face {
 	font-family: "Berkeley Old Style";
-	font-weight: 700;
-	src: url('https://doublee.dev/fonts/BerkeleyOldStyleBold.woff2') format('woff2');
+	src: url('https://doublee.dev/fonts/BerkeleyOldStyleBook.woff2') format('woff2');
+	font-style: normal;
+	font-weight: 400;
+	/*! Custom adjustments to suit the combination of fonts */
+	size-adjust: 115%;
 }
+
 @font-face {
 	font-family: "Berkeley Old Style";
 	font-style: italic;
 	font-weight: 400;
 	src: url('https://doublee.dev/fonts/BerkeleyOldStyleItalic.woff2') format('woff2');
+	/*! Custom adjustments to suit the combination of fonts */
+	size-adjust: 115%;
 }
+
 @font-face {
 	font-family: "Berkeley Old Style";
-	src: url('https://doublee.dev/fonts/BerkeleyOldStyleBook.woff2') format('woff2');
-	font-style: normal;
-	font-weight: 400;
+	font-weight: 700;
+	src: url('https://doublee.dev/fonts/BerkeleyOldStyleBold.woff2') format('woff2');
+	/*! Custom adjustments to suit the combination of fonts */
+	size-adjust: 110%;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600;700&display=swap");
