@@ -6,21 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6b0a1940-71e3-4562-ab40-faa17ea47822" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doublee-common.css" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doublee-common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-common.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doublee-storybook-manager.css" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-storybook-manager.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doublee-storybook-manager.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-storybook-manager.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doublee-storybook-manager.scss" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-storybook-manager.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doublee-storybook-preview.css" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-storybook-preview.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doublee-storybook-preview.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-storybook-preview.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doublee-tokens.css" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-tokens.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doublee-tokens.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-tokens.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doublee-tokens.scss" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-tokens.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storybook-theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/storybook-theme.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/demo.css" beforeDir="false" afterPath="$PROJECT_DIR$/test/demo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/demo.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/test/demo.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/demo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/test/demo.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +116,9 @@
       <workItem from="1777504600873" duration="13697000" />
       <workItem from="1777603558451" duration="365000" />
       <workItem from="1777679590148" duration="6822000" />
-      <workItem from="1777690275268" duration="4629000" />
+      <workItem from="1777690275268" duration="11752000" />
+      <workItem from="1777704668328" duration="1708000" />
+      <workItem from="1777708040332" duration="11839000" />
     </task>
     <servers />
   </component>

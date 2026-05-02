@@ -1,34 +1,28 @@
 @layer doublee-tokens {
   :root {
-    --font-family-body: 'Berkeley Old Style', 'Californian FB', Georgia, serif;
-    --font-family-headings: 'Copernicus New Cond', sans-serif;
-    --font-family-accent: 'Neue Montreal', 'Neue Helvetica', Helvetica, Arial, sans-serif;
-    --font-family-labels: 'Neue Montreal', 'Neue Helvetica', Helvetica, Arial, sans-serif;
-    --font-family-code: 'Fira Code', Consolas, system-ui-monospace, monospace;
+    --font-family-body: "Berkeley Old Style", "Californian FB", Georgia, serif;
+    --font-family-headings: "Copernicus New Cond", sans-serif;
+    --font-family-accent: "Neue Montreal", "Neue Helvetica", Helvetica, Arial, sans-serif;
+    --font-family-labels: "Neue Montreal", "Neue Helvetica", Helvetica, Arial, sans-serif;
+    --font-family-code: "Fira Code", Consolas, system-ui-monospace, monospace;
     --font-weight-light: 300;
     --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
-    --line-height-base: 1.45;
+    --line-height-base: 1.6;
     --line-height-headings: 1.2;
     --typescale: 1.2;
-  }
-  @media (min-width: 768px) {
-    :root {
-      --typescale: 1.25;
-    }
-  }
-  :root {
-    --font-size-sm: 0.9rem;
     --font-size-base: 1rem;
+    --font-size-sm: 0.9rem;
+    --font-size-body: 1rem;
     --font-size-md: calc(1rem * var(--typescale));
     --font-size-lg: calc(calc(1rem * var(--typescale)) * var(--typescale));
     --font-size-xl: calc(calc(calc(1rem * var(--typescale)) * var(--typescale)) * var(--typescale));
     --font-size-xxl: calc(calc(calc(calc(1rem * var(--typescale)) * var(--typescale)) * var(--typescale)) * var(--typescale));
     --font-size-display: calc(calc(calc(calc(calc(calc(1rem * var(--typescale)) * var(--typescale)) * var(--typescale)) * var(--typescale)) * var(--typescale)) * var(--typescale));
     --font-sm: var(--font-weight-normal) var(--font-size-sm) var(--font-family-labels);
-    --font-base: var(--font-weight-normal) var(--font-size-base) var(--font-family-body);
+    --font-body: var(--font-weight-normal) var(--font-size-body) var(--font-family-body);
     --font-md: var(--font-weight-medium) var(--font-size-md)/var(--line-height-headings) var(--font-family-accent);
     --font-lg: var(--font-weight-semibold) var(--font-size-lg)/var(--line-height-headings) var(--font-family-headings);
     --font-xl: var(--font-weight-semibold) var(--font-size-xl)/var(--line-height-headings) var(--font-family-headings);
@@ -43,6 +37,9 @@
     --spacing-lg: calc(calc(1rem * var(--typescale)) * var(--typescale));
     --spacing-xl: calc(calc(calc(calc(1rem * var(--typescale)) * var(--typescale)) * var(--typescale)) * var(--typescale));
     --spacing-xxl: calc(calc(calc(calc(calc(calc(1rem * var(--typescale)) * var(--typescale)) * var(--typescale)) * var(--typescale)) * var(--typescale)) * var(--typescale));
+    --border-radius-sm: var(--spacing-xs);
+    --border-radius-md: var(--spacing-sm);
+    --border-radius-round: 100px;
     --color-primary: #845ec2;
     --color-secondary: #0abfa0;
     --color-accent: #c92c5a;
@@ -56,19 +53,30 @@
     --color-body-text: #181825;
     --color-body-text-muted: oklch(from color-mix(in srgb, var(--color-body-text) 85%, gray 15%) calc(l + 0.35) calc(c * 0.8) calc(h));
   }
+  @media (min-width: 768px) {
+    :root {
+      --typescale: 1.25;
+    }
+  }
+  @media (min-width: 1024px) {
+    :root {
+      --font-size-base: calc(17 / 16 * 100%);
+    }
+  }
 }
 .prismjs {
   background: #181825;
   color: white;
+  /** Based on Catpuccin Mocha - https://prismjs.catppuccin.com/mocha.css */
+  /* https://prismjs.com/tokens.html */
+  /* Diff */
+  /* Other */
 }
 .prismjs * {
   font-family: "Fira Code", monospace;
   font-weight: 300;
   font-size: 0.9rem;
   line-height: 1.4;
-}
-.prismjs {
-  /** Based on Catpuccin Mocha - https://prismjs.catppuccin.com/mocha.css */
 }
 .prismjs code[class*=language-],
 .prismjs pre[class*=language-] {
@@ -77,9 +85,6 @@
 .prismjs :not(pre) > code[class*=language-],
 .prismjs pre[class*=language-] {
   background: #181825;
-}
-.prismjs {
-  /* https://prismjs.com/tokens.html */
 }
 .prismjs .token.keyword {
   color: #cba6f7;
@@ -161,17 +166,11 @@
 .prismjs .token.selector {
   color: #89b4fa;
 }
-.prismjs {
-  /* Diff */
-}
 .prismjs .token.deleted {
   color: #f38ba8;
 }
 .prismjs .token.inserted {
   color: #a6e3a1;
-}
-.prismjs {
-  /* Other */
 }
 .prismjs .token.important,
 .prismjs .token.bold {
@@ -191,6 +190,10 @@
 [id*="tabpanel-storybook/html/panel"] .prismjs {
   background: #181825;
   color: white;
+  /** Based on Catpuccin Mocha - https://prismjs.catppuccin.com/mocha.css */
+  /* https://prismjs.com/tokens.html */
+  /* Diff */
+  /* Other */
 }
 .docblock-source .prismjs *,
 .docs-story + div .prismjs *,
@@ -199,11 +202,6 @@
   font-weight: 300;
   font-size: 0.9rem;
   line-height: 1.4;
-}
-.docblock-source .prismjs,
-.docs-story + div .prismjs,
-[id*="tabpanel-storybook/html/panel"] .prismjs {
-  /** Based on Catpuccin Mocha - https://prismjs.catppuccin.com/mocha.css */
 }
 .docblock-source .prismjs code[class*=language-],
 .docblock-source .prismjs pre[class*=language-],
@@ -220,11 +218,6 @@
 [id*="tabpanel-storybook/html/panel"] .prismjs :not(pre) > code[class*=language-],
 [id*="tabpanel-storybook/html/panel"] .prismjs pre[class*=language-] {
   background: #181825;
-}
-.docblock-source .prismjs,
-.docs-story + div .prismjs,
-[id*="tabpanel-storybook/html/panel"] .prismjs {
-  /* https://prismjs.com/tokens.html */
 }
 .docblock-source .prismjs .token.keyword,
 .docs-story + div .prismjs .token.keyword,
@@ -366,11 +359,6 @@
 [id*="tabpanel-storybook/html/panel"] .prismjs .token.selector {
   color: #89b4fa;
 }
-.docblock-source .prismjs,
-.docs-story + div .prismjs,
-[id*="tabpanel-storybook/html/panel"] .prismjs {
-  /* Diff */
-}
 .docblock-source .prismjs .token.deleted,
 .docs-story + div .prismjs .token.deleted,
 [id*="tabpanel-storybook/html/panel"] .prismjs .token.deleted {
@@ -380,11 +368,6 @@
 .docs-story + div .prismjs .token.inserted,
 [id*="tabpanel-storybook/html/panel"] .prismjs .token.inserted {
   color: #a6e3a1;
-}
-.docblock-source .prismjs,
-.docs-story + div .prismjs,
-[id*="tabpanel-storybook/html/panel"] .prismjs {
-  /* Other */
 }
 .docblock-source .prismjs .token.important,
 .docblock-source .prismjs .token.bold,
@@ -413,11 +396,31 @@
   font-weight: var(--font-weight-semibold);
   letter-spacing: inherit;
   text-transform: none;
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-body);
 }
 #storybook-explorer-tree .sidebar-item button, #storybook-explorer-tree .sidebar-item a {
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-normal);
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: all 0.2s ease-in-out;
+  line-height: 1.25;
+}
+#storybook-explorer-tree .sidebar-item button:hover, #storybook-explorer-tree .sidebar-item button:focus, #storybook-explorer-tree .sidebar-item button:active, #storybook-explorer-tree .sidebar-item a:hover, #storybook-explorer-tree .sidebar-item a:focus, #storybook-explorer-tree .sidebar-item a:active {
+  text-decoration-color: currentColor;
+  background: rgb(from var(--color-primary) r g b/0.15);
+}
+#storybook-explorer-tree .sidebar-item button[aria-label="Open context menu"] {
+  display: none;
+}
+#storybook-explorer-tree .sidebar-item a div:has(svg) {
+  margin-top: 1px;
+}
+
+#storybook-panel-root .docblock-argstable-body td:has(button) {
+  letter-spacing: unset;
+  text-transform: none;
+  font-size: inherit;
 }
 
 /*# sourceMappingURL=doublee-storybook-manager.css.map */

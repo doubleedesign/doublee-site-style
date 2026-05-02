@@ -1,6 +1,6 @@
 @use './doublee-tokens.scss';
 @use './doublee-prism.scss';
-@use 'functions' as *;
+@use 'functions' as func;
 
 #storybook-explorer-tree {
 	button {
@@ -13,7 +13,7 @@
 			font-weight: var(--font-weight-semibold);
 			letter-spacing: inherit;
 			text-transform: none;
-			font-size: var(--font-size-base);
+			font-size: var(--font-size-body);
 		}
 	}
 
@@ -21,7 +21,36 @@
 		button, a {
 			font-size: var(--font-size-sm);
 			font-weight: var(--font-weight-normal);
+			text-decoration: underline;
+			text-decoration-color: transparent;
+			transition: all 0.2s ease-in-out;
+			line-height: 1.25;
+
+			&:hover, &:focus, &:active {
+				text-decoration-color: currentColor;
+				background: #{func.transparentize-color(primary, 0.15)};
+			}
+		}
+
+		button[aria-label="Open context menu"] {
+			display: none;
+		}
+
+		a {
+			div:has(svg) {
+				margin-top: 1px;
+			}
 		}
 	}
+}
 
+#storybook-panel-root {
+
+	.docblock-argstable-body {
+		td:has(button) {
+			letter-spacing: unset;
+			text-transform: none;
+			font-size: inherit;
+		}
+	}
 }

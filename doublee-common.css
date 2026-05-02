@@ -1,5 +1,8 @@
 @charset "UTF-8";
 @layer doublee-common {
+  html {
+    font-size: var(--font-size-base);
+  }
   :root {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -8,9 +11,16 @@
   }
   body {
     color: var(--color-body-text);
-    font: var(--font-base);
+    font: var(--font-body);
     line-height: var(--line-height-base);
     letter-spacing: -0.02em;
+  }
+  @container style(--background-color: dark) {
+    * {
+      background: var(--color-dark);
+      color: white;
+      font-weight: var(--font-weight-light);
+    }
   }
   h1, h2, h3, h4, h5, h6, p, ul, li {
     margin: 0;
@@ -19,6 +29,9 @@
   h1, h2, h3, h4, h5, h6 {
     font-weight: var(--font-weight-semibold);
     letter-spacing: 0;
+  }
+  h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+    margin-block-start: 0;
   }
   h1, h2 {
     margin-block-end: var(--spacing-sm);
@@ -33,6 +46,11 @@
     font: var(--font-xl);
     margin-block-start: var(--spacing-xl);
   }
+  @container style(--background-color: dark) {
+    h2 {
+      font-weight: var(--font-weight-medium);
+    }
+  }
   h3 {
     font: var(--font-lg);
     font-weight: var(--font-weight-medium);
@@ -45,8 +63,44 @@
   p, ul, ol {
     margin-block: var(--spacing-md);
   }
+  strong {
+    font-weight: var(--font-weight-bold);
+  }
   ul, ol {
-    margin-inline-start: var(--font-size-base);
+    margin-inline-start: var(--spacing-md);
+  }
+  a, button {
+    text-decoration: underline;
+    transition: all 0.2s ease-in-out;
+  }
+  a:hover, a:focus, a:active, button:hover, button:focus, button:active {
+    text-decoration-color: currentColor;
+  }
+  a {
+    color: currentColor;
+  }
+  a:hover, a:focus, a:active {
+    color: var(--color-primary);
+  }
+  button {
+    font: var(--font-labels);
+    background: var(--color-light);
+    padding: var(--spacing-sm) var(--spacing-md);
+    line-height: 1;
+    border: 1px solid color-mix(in srgb, var(--color-light) 90%, black);
+    border-radius: var(--border-radius-sm);
+    display: inline-flex;
+    gap: var(--spacing-xs);
+    align-items: center;
+    cursor: pointer;
+    text-decoration-color: transparent;
+  }
+  button svg {
+    height: 1em;
+    width: auto;
+  }
+  button:hover, button:focus, button:active {
+    background: color-mix(in srgb, var(--color-light) 95%, black);
   }
   pre, code,
   textarea:has(+ pre) {

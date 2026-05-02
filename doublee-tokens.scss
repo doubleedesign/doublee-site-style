@@ -13,7 +13,7 @@
 		--font-weight-semibold: 600;
 		--font-weight-bold: 700;
 
-		--line-height-base: 1.45;
+		--line-height-base: 1.6;
 		--line-height-headings: 1.2;
 		--typescale: 1.2;
 
@@ -21,8 +21,13 @@
 			--typescale: 1.25;
 		}
 
-		--font-size-sm: 0.9rem; // type scale step down would be too small
 		--font-size-base: 1rem;
+		@media (min-width: 1024px) {
+			// Everything just needs to be a little bigger by default for my typography choices, even after the @font-face adjustments.
+			--font-size-base: calc(17 / 16 * 100%);
+		}
+		--font-size-sm: 0.9rem; // type scale step down would be too small
+		--font-size-body: 1rem;
 		--font-size-md: #{func.step-up(1)};
 		--font-size-lg: #{func.step-up(2)};
 		--font-size-xl: #{func.step-up(3)};
@@ -30,7 +35,7 @@
 		--font-size-display: #{func.step-up(6)};
 
 		--font-sm: var(--font-weight-normal) var(--font-size-sm) var(--font-family-labels);
-		--font-base: var(--font-weight-normal) var(--font-size-base) var(--font-family-body);
+		--font-body: var(--font-weight-normal) var(--font-size-body) var(--font-family-body);
 		--font-md: var(--font-weight-medium) var(--font-size-md)/var(--line-height-headings) var(--font-family-accent);
 		--font-lg: var(--font-weight-semibold) var(--font-size-lg)/var(--line-height-headings) var(--font-family-headings);
 		--font-xl: var(--font-weight-semibold) var(--font-size-xl)/var(--line-height-headings) var(--font-family-headings);
@@ -47,6 +52,10 @@
 		--spacing-lg: #{func.step-up(2)};
 		--spacing-xl: #{func.step-up(4)};
 		--spacing-xxl: #{func.step-up(6)};
+
+		--border-radius-sm: var(--spacing-xs);
+		--border-radius-md: var(--spacing-sm);
+		--border-radius-round: 100px;
 
 		--color-primary: #845ec2;
 		--color-secondary: #0abfa0;

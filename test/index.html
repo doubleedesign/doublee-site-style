@@ -40,7 +40,7 @@
             const palette = document.getElementById('typography');
             if (!palette) return;
 
-            const fonts = ['sm', 'base', 'md', 'lg', 'xl', 'xxl', 'display'];
+            const fonts = ['sm', 'body', 'md', 'lg', 'xl', 'xxl', 'display'];
             fonts.forEach(size => {
                 const element = document.createElement('font-swatch');
                 element.setAttribute('size', size);
@@ -59,8 +59,10 @@
 <section>
     <h1>Some Common Style</h1>
 
-    <p>Over the line? You're so far past the line, that you can't even see the line! The line is a dot to you! I understand
-        why Superman is here, but why is there a porcupine at the Easter Bunny's funeral? "You hung up on the pizza place? I don't hang up on your friends!"
+    <p>Over the line? You're so far past the line, that you can't even see the line! <a href="https://doubleedesign.github.io/friends-ipsum/" target="_blank">The
+        line is a dot to you!</a> I understand why Superman is here, but why is there a porcupine at the Easter Bunny's funeral? "You hung up on the pizza
+        place? I don't hang up on your friends!" <strong>It's a moo point.</strong> It’s like a cow's opinion; it doesn't matter. It's moo. "Be sleepy! And
+        grumpy!" <em>Stop naming dwarves!</em>
     </p>
 
     <p>That’s a great story. Tell it while you’re getting me some iced tea. We were on a break! I'm sorry, it was a
@@ -69,17 +71,44 @@
         stopped and I said, what if I don't want to be a shoe? What if I want to be a purse, you know, or a hat? They're
         as different as night and...later that night. </p>
 
-    <p><strong>That's a lot of information to get in 30 seconds.</strong> Welcome to the real world! It sucks. You're gonna love it! So
-        it seems like this internet thing is here to stay. It's a moo point. It’s like a cow's opinion; it doesn't
-        matter. It's moo. Well, the fridge broke, so I had to eat everything.
-    </p>
-
     <h2>So it seems like this internet thing is here to stay.</h2>
+
+    <div role="group">
+        <button onclick="console.log('click')">A button</button>
+        <button onclick="console.log('click')">Another button</button>
+        <button onclick="console.log('click')">
+            Button with SVG icon
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <!--!Font Awesome Pro v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.-->
+                <path d="M505 273c9.4-9.4 9.4-24.6 0-33.9L337 71c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l127 127-406.1 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l406.1 0-127 127c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0L505 273z"/>
+            </svg>
+        </button>
+    </div>
 
     <p>You can't just give up. Is that what a dinosaur would do? Should I use my invisibility to fight crime or for evil? If you want to receive emails about my
         upcoming shows, please give me money so I can buy a computer. <strong>We are dessert-stealers. <em>We are living outside the law.</em></strong> They
         don’t know that we know they know we know. You didn't cry when Bambi's mom died? Yes, it was so sad when the guy stopped drawing the deer.
     </p>
+
+    <div style="--background-color: dark; margin-block-end:var(--spacing-lg)">
+        <div style="padding:var(--spacing-lg)">
+            <h2>Text on dark background</h2>
+            <p><strong>That's a lot of information to get in 30 seconds.</strong> Welcome to the real world! It sucks. You're gonna love it! So
+                it seems like this internet thing is here to stay. It's a moo point. It’s like a cow's opinion; it doesn't
+                matter. It's moo. Well, the fridge broke, so I had to eat everything. "Be sleepy! And grumpy!" <em>Stop naming dwarves!</em>
+            </p>
+        </div>
+    </div>
+
+    <div style="--background-color: dark;">
+        <div style="padding:var(--spacing-lg)">
+            <h3>Heading 3 on a dark background</h3>
+            <p><strong>That's a lot of information to get in 30 seconds.</strong> Welcome to the real world! It sucks. You're gonna love it! So
+                it seems like this internet thing is here to stay. It's a moo point. It’s like a cow's opinion; it doesn't
+                matter. It's moo. Well, the fridge broke, so I had to eat everything. "Be sleepy! And grumpy!" <em>Stop naming dwarves!</em>
+            </p>
+        </div>
+    </div>
 
     <blockquote>
         You don't have a TV? What's all your furniture pointed at?
@@ -125,11 +154,20 @@
         <generic-swatch label="Heading 1">
             <h1>If it's not a right angle, it's a wrong angle.</h1>
         </generic-swatch>
+        <generic-swatch label="Heading 1 (multiline)">
+            <h1>Come on, Ross. <br/>You’re a paleontologist. <br/>Dig a little deeper.</h1>
+        </generic-swatch>
         <generic-swatch label="Heading 2">
             <h2>Could I <em>be</em> wearing any more clothes?</h2>
         </generic-swatch>
+        <generic-swatch label="Heading 2 (multiline)">
+            <h2>Where do you want to go to lunch? <br/>Mama’s Little Bakery, Chicago, Illinois.</h2>
+        </generic-swatch>
         <generic-swatch label="Heading 3">
             <h3>I'm Chandler. I make jokes when I’m uncomfortable.</h3>
+        </generic-swatch>
+        <generic-swatch label="Heading 3 (multiline)">
+            <h3>I'm Chandler. I make jokes when I’m uncomfortable. <br/>I'm not great at the advice, can I interest you in a sarcastic comment?</h3>
         </generic-swatch>
         <generic-swatch label="Heading 4">
             <h4>The cushions are the essence of the chair!</h4>
@@ -149,6 +187,20 @@
             <p>Gum would be perfection. <em>Come on, Ross, you're a paleontologist. Dig a little deeper.</em> Three bathrooms in
                 this place, and I threw up in a coat closet. Where do you want to go to lunch? <strong>Mama's Little Bakery</strong>,
                 Chicago, Illinois.</p>
+        </generic-swatch>
+        <generic-swatch label="Unordered list">
+            <ul>
+                <li>I tell you, when I actually die, some people are gonna get seriously haunted.</li>
+                <li>So it seems like this internet thing is here to stay.</li>
+                <li>Well, the fridge broke, so I had to eat everything.</li>
+            </ul>
+        </generic-swatch>
+        <generic-swatch label="Ordered list">
+            <ol>
+                <li>We might still have some money if your father hadn't thought it was a good idea to sell ice over the internet.</li>
+                <li>A promise between friends means never having to give a reason.</li>
+                <li>I'm sorry, it was a one-time thing. I was very drunk, and it was someone else's subconscious.</li>
+            </ol>
         </generic-swatch>
         <generic-swatch label="Blockquote">
             <blockquote>You don't have a TV? What's all your furniture pointed at?</blockquote>
