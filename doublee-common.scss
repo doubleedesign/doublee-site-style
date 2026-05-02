@@ -64,7 +64,7 @@
 
 	pre, code,
 	textarea:has(+ pre) {
-		background: var(--color-light-muted);
+		background: var(--color-light);
 		font-family: var(--font-family-code);
 		font-size-adjust: ex-height 0.45;
 		display: inline-block;

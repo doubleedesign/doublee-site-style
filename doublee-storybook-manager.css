@@ -50,14 +50,10 @@
     --color-warning: #ffc75f;
     --color-success: #0abfa0;
     --color-error: #ff775f;
-    --color-light: color-mix(in srgb, var(--color-primary) 15%, white);
+    --color-light: ghostwhite;
     --color-dark: color-mix(in srgb, var(--color-primary) 40%, black);
     --color-white: #ffffff;
     --color-body-text: #181825;
-    --color-primary-muted: oklch(from color-mix(in srgb, var(--color-primary) 85%, gray 15%) calc(l + 0.15) calc(c * 0.5) calc(h));
-    --color-secondary-muted: oklch(from color-mix(in srgb, var(--color-secondary) 85%, gray 15%) calc(l + 0.15) calc(c * 0.5) calc(h));
-    --color-light-muted: oklch(from color-mix(in srgb, var(--color-light) 85%, gray 15%) calc(l + 0.07) calc(c * 0.6) calc(h));
-    --color-dark-muted: oklch(from color-mix(in srgb, var(--color-dark) 85%, gray 15%) calc(l + 0.07) calc(c * 0.6) calc(h));
     --color-body-text-muted: oklch(from color-mix(in srgb, var(--color-body-text) 85%, gray 15%) calc(l + 0.35) calc(c * 0.8) calc(h));
   }
 }

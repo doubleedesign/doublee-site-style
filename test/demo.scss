@@ -43,21 +43,26 @@ body {
 
 #palette {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(12, 1fr);
 	gap: var(--spacing-md);
 	margin-block-end: var(--spacing-xl);
 
 	color-swatch {
+		grid-column: span 3;
 
 		&[color="primary"] {
-			grid-column: span 2;
+			grid-column: span 6;
 		}
 
 		&[color="light"],
-		&[color="dark"],
+		&[color="dark"] {
+			grid-column: span 6;
+		}
+
 		&[color="light-muted"],
+		&[color="light-subtle"],
 		&[color="dark-muted"] {
-			grid-column: span 2;
+			grid-column: span 4;
 		}
 	}
 

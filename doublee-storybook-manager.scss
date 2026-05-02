@@ -1,5 +1,6 @@
 @use './doublee-tokens.scss';
 @use './doublee-prism.scss';
+@use 'functions' as *;
 
 #storybook-explorer-tree {
 	button {

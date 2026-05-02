@@ -35,15 +35,21 @@ body {
 
 #palette {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   gap: var(--spacing-md);
   margin-block-end: var(--spacing-xl);
 }
-#palette color-swatch[color=primary] {
-  grid-column: span 2;
+#palette color-swatch {
+  grid-column: span 3;
 }
-#palette color-swatch[color=light], #palette color-swatch[color=dark], #palette color-swatch[color=light-muted], #palette color-swatch[color=dark-muted] {
-  grid-column: span 2;
+#palette color-swatch[color=primary] {
+  grid-column: span 6;
+}
+#palette color-swatch[color=light], #palette color-swatch[color=dark] {
+  grid-column: span 6;
+}
+#palette color-swatch[color=light-muted], #palette color-swatch[color=light-subtle], #palette color-swatch[color=dark-muted] {
+  grid-column: span 4;
 }
 #palette .swatch__color {
   height: 100px;

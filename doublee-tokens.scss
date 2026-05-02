@@ -55,15 +55,10 @@
 		--color-warning: #ffc75f;
 		--color-success: #0abfa0;
 		--color-error: #ff775f;
-		--color-light: #{func.lighten(primary, 85)};
+		--color-light: ghostwhite;
 		--color-dark: #{func.darken(primary, 60)};
 		--color-white: #ffffff;
 		--color-body-text: #181825;
-
-		--color-primary-muted: #{func.mute-color(primary)};
-		--color-secondary-muted: #{func.mute-color(secondary)};
-		--color-light-muted: #{func.mute-color(light, 0.4, 0.07)};
-		--color-dark-muted: #{func.mute-color(dark, 0.4, 0.07)};
 		--color-body-text-muted: #{func.mute-color(body-text, 0.2, 0.35)};
 	}
 }

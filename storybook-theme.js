@@ -3,10 +3,9 @@ const colors = {
     body: '#181825',
     bodyMuted: '#888893',
     primary: '#845ec2',
-    primaryMuted: '#AA9CC8',
     secondary: '#0ABFA0',
-    light: '#EDE7F6',
-    dark: '#35264E'
+    light: 'ghostwhite',
+    dark: '#35264E',
 }
 
 export const doubleeTheme = {
@@ -19,8 +18,14 @@ export const doubleeTheme = {
     textColor: colors.body,
     textInverseColor: '#FFF',
     textMutedColor: colors.bodyMuted,
+    appBg: colors.light,
+    appBorderColor: "hsl(212 50% 30% / 0.15)",
+    appBorderRadius: 4,
+    appContentBg: "#FFFFFF",
+    appHoverBg: colors.light,
+    appPreviewBg: "#FFFFFF",
     barTextColor: colors.body,
-    barHoverColor: colors.primaryMuted,
+    barHoverColor: colors.light,
     barSelectedColor: colors.primary,
     barBg: "#FFFFFF",
     buttonBg: colors.light,
