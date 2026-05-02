@@ -4,13 +4,23 @@
 #storybook-explorer-tree {
 	button {
 		font-size: var(--font-size-sm);
-		font-weight: 530;
+		font-weight: var(--font-weight-medium);
+	}
+
+	.sidebar-subheading {
+		button {
+			font-weight: var(--font-weight-semibold);
+			letter-spacing: inherit;
+			text-transform: none;
+			font-size: var(--font-size-base);
+		}
 	}
 
 	.sidebar-item {
 		button, a {
 			font-size: var(--font-size-sm);
-			font-weight: 400;
+			font-weight: var(--font-weight-normal);
 		}
 	}
+
 }

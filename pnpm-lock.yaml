@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@doubleedesign/clientside-typographers-quotes':
+        specifier: ^0.0.1
+        version: 0.0.1
+
+packages:
+
+  '@doubleedesign/clientside-typographers-quotes@0.0.1':
+    resolution: {integrity: sha512-Ubeb7qoJ/+BVoR3mJa/Fvbow7eMsYfZ8np4OfoYY+dJwD43xuk1UfMLpZ09IsplUoKbhJCb3e3mfHUGMA1xyKg==}
+
+snapshots:
+
+  '@doubleedesign/clientside-typographers-quotes@0.0.1': {}

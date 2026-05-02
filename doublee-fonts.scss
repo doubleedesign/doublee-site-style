@@ -58,6 +58,11 @@
 	ascent-override: 85%;
 }
 
+@font-face {
+	font-family: "Fira Code";
+	font-weight: 300;
+	src: url('https://doublee.dev/fonts/FiraCode-Light.woff2') format('woff2');
+}
 
 /**
  * @license
@@ -88,6 +93,37 @@
 	size-adjust: 115%;
 }
 
+@media screen and (min-resolution: 150dpi) {
+	@font-face {
+		font-family: "Berkeley Old Style";
+		src: url('https://doublee.dev/fonts/BerkeleyOldStyleMedium.woff2') format('woff2');
+		font-style: normal;
+		font-weight: 400;
+		/*! Custom adjustments to suit the combination of fonts */
+		size-adjust: 115%;
+	}
+}
+
+@font-face {
+	font-family: "Berkeley Old Style";
+	font-style: italic;
+	font-weight: 400;
+	src: url('https://doublee.dev/fonts/BerkeleyOldStyleBookItalic.woff2') format('woff2');
+	/*! Custom adjustments to suit the combination of fonts */
+	size-adjust: 115%;
+}
+
+@media screen and (min-resolution: 150dpi) {
+	@font-face {
+		font-family: "Berkeley Old Style";
+		font-style: italic;
+		font-weight: 400;
+		src: url('https://doublee.dev/fonts/BerkeleyOldStyleMediumItalic.woff2') format('woff2');
+		/*! Custom adjustments to suit the combination of fonts */
+		size-adjust: 115%;
+	}
+}
+
 @font-face {
 	font-family: "Berkeley Old Style";
 	font-style: italic;
@@ -104,5 +140,3 @@
 	/*! Custom adjustments to suit the combination of fonts */
 	size-adjust: 110%;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600;700&display=swap");

@@ -10,10 +10,13 @@
     <script src="color-swatch.js"></script>
     <script src="font-swatch.js"></script>
     <script src="generic-swatch.js"></script>
-    <script>
+    <script type="module">
+        import {TypographersQuotes} from '../node_modules/@doubleedesign/clientside-typographers-quotes/dist/TypographersQuotes.js';
+
         setTimeout(() => {
             createColourPalette();
             createTypePalette();
+            quotify();
         }, 50);
 
         function createColourPalette() {
@@ -45,6 +48,11 @@
                 palette.appendChild(element);
             });
         }
+
+        function quotify() {
+            const quotes = new TypographersQuotes({selectors: ['body']});
+            quotes.apply();
+        }
     </script>
 </head>
 <body>
@@ -52,48 +60,36 @@
 <section>
     <h1>Some Common Style</h1>
 
-    <p>Over the line? You're so far past the line, that you can't even see the line! The line is a dot to you! I
-        understand
-        why Superman is here, but why is there a porcupine at the Easter Bunny's funeral? You hung up on the pizza
-        place? I
-        don't hang up on your friends!
+    <p>Over the line? You're so far past the line, that you can't even see the line! The line is a dot to you! I understand
+        why Superman is here, but why is there a porcupine at the Easter Bunny's funeral? "You hung up on the pizza place? I don't hang up on your friends!"
     </p>
 
     <p>That’s a great story. Tell it while you’re getting me some iced tea. We were on a break! I'm sorry, it was a
-        one-time
-        thing. I was very drunk, and it was someone else's subconscious. They're different from my other friends, they
-        don't
-        start sentences with "you know who just died shoveling snow?" We ordered the Joey Special. Three pizzas?! I just
+        one-time thing. I was very drunk, and it was someone else's subconscious. <em>They're different from my other friends, they
+            don't start sentences with "you know who just died shoveling snow?"</em> We ordered the Joey Special. Three pizzas?! I just
         stopped and I said, what if I don't want to be a shoe? What if I want to be a purse, you know, or a hat? They're
-        as
-        different as night and...later that night. </p>
+        as different as night and...later that night. </p>
 
-    <p>That's a lot of information to get in 30 seconds. Welcome to the real world! It sucks. You're gonna love it! So
+    <p><strong>That's a lot of information to get in 30 seconds.</strong> Welcome to the real world! It sucks. You're gonna love it! So
         it seems like this internet thing is here to stay. It's a moo point. It’s like a cow's opinion; it doesn't
         matter. It's moo. Well, the fridge broke, so I had to eat everything.
     </p>
 
     <h2>So it seems like this internet thing is here to stay.</h2>
 
-    <p>You can't just give up. Is that what a dinosaur would do? Should I use my invisibility to fight crime or for
-        evil?
-        If you want to receive emails about my upcoming shows, please give me money so I can buy a computer. We are
-        dessert-stealers. We are living outside the law. They don’t know that we know they know we know. You didn't cry
-        when
-        Bambi's mom died? Yes, it was so sad when the guy stopped drawing the deer.
+    <p>You can't just give up. Is that what a dinosaur would do? Should I use my invisibility to fight crime or for evil? If you want to receive emails about my
+        upcoming shows, please give me money so I can buy a computer. <strong>We are dessert-stealers. <em>We are living outside the law.</em></strong> They
+        don’t know that we know they know we know. You didn't cry when Bambi's mom died? Yes, it was so sad when the guy stopped drawing the deer.
     </p>
 
     <blockquote>
         You don't have a TV? What's all your furniture pointed at?
     </blockquote>
 
-    <p>Okay, well, who identified this restaurant's tone as "pretentious-comma-garlicky"? You know what I figure? If I
-        can
-        do laundry, there's nothing I can’t do. That's a lot of information to get in 30 seconds. Oh my God. I've become
-        my father. I've been trying so hard not to become my mother, I didn't see this coming. There's an old Russian
-        expression...Roughly translated, it means: "This thing that I'm looking at: Wow." Look at me! I'm Chandler!
-        Could I
-        <em>be</em> wearing any more clothes? </p>
+    <p>Okay, well, who identified this restaurant's tone as "pretentious-comma-garlicky"? You know what I figure? If I can do laundry, there's nothing I can’t
+        do. <em>That's a lot of information to get in 30 seconds.</em>Oh my God. I've become my father. I've been trying so hard not to become my mother, I
+        didn't see this coming. There's an old Russian expression...Roughly translated, it means: "This thing that I'm looking at: Wow." Look at me! I'm
+        Chandler! Could I <em>be</em> wearing any more clothes? </p>
 
     <ul>
         <li>Paper!</li>
@@ -104,12 +100,10 @@
     <h3>Oh God. Can open. Worms everywhere! </h3>
 
     <p>Gum would be perfection. Come on, Ross, you're a paleontologist. Dig a little deeper. Three bathrooms in this
-        place,
-        and I threw up in a coat closet. Where do you want to go to lunch? Mama's Little Bakery, Chicago, Illinois. </p>
+        place, and I threw up in a coat closet. Where do you want to go to lunch? Mama's Little Bakery, Chicago, Illinois. </p>
 
     <p>I'm not great at the advice. Can I interest you in a sarcastic comment? Wow. I haven't seen you this worked-up
-        since
-        you did that dog-food commercial and you thought you were gonna be with a real talking dog. Yeah, that was a
+        since you did that dog-food commercial and you thought you were gonna be with a real talking dog. Yeah, that was a
         disappointment You have to stop the Q-Tip when there’s resistance! </p>
 
 </section>
@@ -123,8 +117,7 @@
     <h2>Typography</h2>
 
     <h3>Base</h3>
-    <p>Base font styling tokens that use the CSS <code>font</code> shorthand to combine intended base size, weight,
-        and family combinations.</p>
+    <p>Base font styling tokens that use the CSS <code>font</code> shorthand to combine intended base size, weight, and family combinations.</p>
     <div id="typography"></div>
 
     <h3>Structural</h3>
@@ -149,8 +142,13 @@
             <h6>Oh God. Can open. Worms everywhere!</h6>
         </generic-swatch>
         <generic-swatch label="Paragraph">
-            <p>Gum would be perfection. Come on, Ross, you're a paleontologist. Dig a little deeper. Three bathrooms in
+            <p>Gum would be perfection. "Come on, Ross, you're a paleontologist. Dig a little deeper." Three bathrooms in
                 this place, and I threw up in a coat closet. Where do you want to go to lunch? Mama's Little Bakery,
+                Chicago, Illinois.</p>
+        </generic-swatch>
+        <generic-swatch label="Paragraph with inline formatting">
+            <p>Gum would be perfection. <em>Come on, Ross, you're a paleontologist. Dig a little deeper.</em> Three bathrooms in
+                this place, and I threw up in a coat closet. Where do you want to go to lunch? <strong>Mama's Little Bakery</strong>,
                 Chicago, Illinois.</p>
         </generic-swatch>
         <generic-swatch label="Blockquote">

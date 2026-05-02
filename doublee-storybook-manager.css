@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600;700&display=swap");
 @layer doublee-tokens {
   :root {
     --font-family-body: 'Berkeley Old Style', 'Californian FB', Georgia, serif;
@@ -412,11 +411,17 @@
 
 #storybook-explorer-tree button {
   font-size: var(--font-size-sm);
-  font-weight: 530;
+  font-weight: var(--font-weight-medium);
+}
+#storybook-explorer-tree .sidebar-subheading button {
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: inherit;
+  text-transform: none;
+  font-size: var(--font-size-base);
 }
 #storybook-explorer-tree .sidebar-item button, #storybook-explorer-tree .sidebar-item a {
   font-size: var(--font-size-sm);
-  font-weight: 400;
+  font-weight: var(--font-weight-normal);
 }
 
 /*# sourceMappingURL=doublee-storybook-manager.css.map */

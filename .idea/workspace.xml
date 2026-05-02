@@ -6,16 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="6b0a1940-71e3-4562-ab40-faa17ea47822" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doublee-common.css" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doublee-common.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-common.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doublee-common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-common.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doublee-fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-fonts.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doublee-fonts.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-fonts.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FiraCode-Light.woff2" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/doublee-fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-fonts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/demo.css" beforeDir="false" afterPath="$PROJECT_DIR$/test/demo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/demo.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/test/demo.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/demo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/test/demo.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doublee-storybook-manager.css" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-storybook-manager.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doublee-storybook-manager.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-storybook-manager.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doublee-storybook-manager.scss" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-storybook-manager.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +48,9 @@
     &quot;accountId&quot;: &quot;6a516c16-1802-4907-b049-1f215c96ad0a&quot;
   }
 }</component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6,
   &quot;fromUser&quot;: false
@@ -82,7 +80,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.HTML&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -117,7 +115,10 @@
       <workItem from="1777284190843" duration="10756000" />
       <workItem from="1777331688309" duration="19261000" />
       <workItem from="1777364764544" duration="2027000" />
-      <workItem from="1777504600873" duration="13492000" />
+      <workItem from="1777504600873" duration="13697000" />
+      <workItem from="1777603558451" duration="365000" />
+      <workItem from="1777679590148" duration="6822000" />
+      <workItem from="1777690275268" duration="1923000" />
     </task>
     <servers />
   </component>
