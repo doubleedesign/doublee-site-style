@@ -3,32 +3,55 @@
 
 .sbdocs-content {
 
-	.sbdocs-title {
-		font: var(--font-xl);
-		font-family: var(--font-family-accent);
+	h2, h3 {
+		border: 0;
+		margin: revert-layer !important;
+		padding: revert-layer;
 	}
 
-	.sbdocs-subtitle {
-		font: var(--font-md);
+	h2 {
+
+	}
+
+	code {
+		font-size: inherit !important;
+		font-family: var(--font-family-code) !important;
 	}
 
 	p, li {
-		font-size: var(--font-size-base);
+		font-size: var(--font-size-body);
 	}
 
-	a.sbdocs-a {
-		color: currentColor !important;
+	a {
+		font-family: inherit !important;
+		color: currentColor;
 
 		&:hover, &:focus, &:active {
-			color: var(--color-accent) !important;
+			color: var(--color-accent);
 		}
+	}
+
+	pre:has(.prismjs) {
+		margin: 0;
+		padding: 0;
 	}
 
 	.docblock-argstable-body {
 		font-size: var(--font-size-sm);
 	}
 
+
+	pre:has(.docblock-source) {
+		width: 100%;
+	}
+
+	div:has(.prismjs) {
+		font-size: 1rem;
+	}
+
 	.docblock-source {
+		margin: 0 !important;
+
 		div:has(button) {
 			background: transparent;
 		}

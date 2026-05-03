@@ -69,6 +69,15 @@
     --color-body-text: #181825;
     --color-body-text-muted: oklch(from color-mix(in srgb, var(--color-body-text) 85%, gray 15%) calc(l + 0.35) calc(c * 0.8) calc(h));
   }
+  [data-typography-mode=docs] {
+    --font-family-headings: 'Neue Montreal', 'Neue Helvetica', Helvetica, Arial, sans-serif;
+    --font-family-body: 'Neue Montreal', 'Neue Helvetica', Helvetica, Arial, sans-serif;
+    --font-body: var(--font-weight-normal) var(--font-size-body) var(--font-family-body);
+    --font-md: var(--font-weight-medium) var(--font-size-body) var(--font-family-accent);
+    --font-lg: var(--font-weight-semibold) var(--font-size-md) var(--font-family-headings);
+    --font-xl: var(--font-weight-semibold) var(--font-size-lg) var(--font-family-headings);
+    --font-xxl: var(--font-weight-semibold) var(--font-size-xl) var(--font-family-headings);
+  }
 }
 .prismjs {
   background: #181825;
@@ -77,8 +86,8 @@
 }
 .prismjs * {
   font-family: "Fira Code", monospace;
-  font-weight: 300;
-  font-size: 0.9rem;
+  font-weight: var(--font-weight-light, 300);
+  font-size: var(--font-size-body);
   line-height: 1.4;
 }
 .prismjs {
@@ -211,8 +220,8 @@
 .docs-story + div .prismjs *,
 [id*="tabpanel-storybook/html/panel"] .prismjs * {
   font-family: "Fira Code", monospace;
-  font-weight: 300;
-  font-size: 0.9rem;
+  font-weight: var(--font-weight-light, 300);
+  font-size: var(--font-size-body);
   line-height: 1.4;
 }
 .docblock-source .prismjs,
@@ -420,24 +429,40 @@
   font-family: "Fira Code", monospace !important;
 }
 
-.sbdocs-content .sbdocs-title {
-  font: var(--font-xl);
-  font-family: var(--font-family-accent);
+.sbdocs-content h2, .sbdocs-content h3 {
+  border: 0;
+  margin: revert-layer !important;
+  padding: revert-layer;
 }
-.sbdocs-content .sbdocs-subtitle {
-  font: var(--font-md);
+.sbdocs-content code {
+  font-size: inherit !important;
+  font-family: var(--font-family-code) !important;
 }
 .sbdocs-content p, .sbdocs-content li {
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-body);
 }
-.sbdocs-content a.sbdocs-a {
-  color: currentColor !important;
+.sbdocs-content a {
+  font-family: inherit !important;
+  color: currentColor;
 }
-.sbdocs-content a.sbdocs-a:hover, .sbdocs-content a.sbdocs-a:focus, .sbdocs-content a.sbdocs-a:active {
-  color: var(--color-accent) !important;
+.sbdocs-content a:hover, .sbdocs-content a:focus, .sbdocs-content a:active {
+  color: var(--color-accent);
+}
+.sbdocs-content pre:has(.prismjs) {
+  margin: 0;
+  padding: 0;
 }
 .sbdocs-content .docblock-argstable-body {
   font-size: var(--font-size-sm);
+}
+.sbdocs-content pre:has(.docblock-source) {
+  width: 100%;
+}
+.sbdocs-content div:has(.prismjs) {
+  font-size: 1rem;
+}
+.sbdocs-content .docblock-source {
+  margin: 0 !important;
 }
 .sbdocs-content .docblock-source div:has(button) {
   background: transparent;

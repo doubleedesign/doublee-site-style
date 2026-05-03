@@ -13,6 +13,11 @@
     line-height: var(--line-height-base);
     --letter-spacing: body;
   }
+  [data-typography-mode=docs] {
+    font: var(--font-body);
+    line-height: var(--line-height-base);
+    font-size-adjust: ex-height 0.53;
+  }
   @container style(--letter-spacing: body) {
     letter-spacing: var(--letter-spacing-body);
   }

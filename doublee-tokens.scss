@@ -75,4 +75,14 @@
 		--color-body-text: #181825;
 		--color-body-text-muted: #{func.mute-color(body-text, 0.2, 0.35)};
 	}
+
+	[data-typography-mode="docs"] {
+		--font-family-headings: 'Neue Montreal', 'Neue Helvetica', Helvetica, Arial, sans-serif;
+		--font-family-body: 'Neue Montreal', 'Neue Helvetica', Helvetica, Arial, sans-serif;
+		--font-body: var(--font-weight-normal) var(--font-size-body) var(--font-family-body);
+		--font-md: var(--font-weight-medium) var(--font-size-body) var(--font-family-accent);
+		--font-lg: var(--font-weight-semibold) var(--font-size-md) var(--font-family-headings);
+		--font-xl: var(--font-weight-semibold) var(--font-size-lg) var(--font-family-headings);
+		--font-xxl: var(--font-weight-semibold) var(--font-size-xl) var(--font-family-headings);
+	}
 }

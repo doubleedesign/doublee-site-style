@@ -5,8 +5,8 @@
 }
 .prismjs * {
   font-family: "Fira Code", monospace;
-  font-weight: 300;
-  font-size: 0.9rem;
+  font-weight: var(--font-weight-light, 300);
+  font-size: var(--font-size-body);
   line-height: 1.4;
 }
 .prismjs {
@@ -139,8 +139,8 @@
 .docs-story + div .prismjs *,
 [id*="tabpanel-storybook/html/panel"] .prismjs * {
   font-family: "Fira Code", monospace;
-  font-weight: 300;
-  font-size: 0.9rem;
+  font-weight: var(--font-weight-light, 300);
+  font-size: var(--font-size-body);
   line-height: 1.4;
 }
 .docblock-source .prismjs,
