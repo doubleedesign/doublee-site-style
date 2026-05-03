@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Copernicus New Cond";
-  src: url("https://doublee.dev/fonts/CopernicusNewCond-130.woff2") format("woff2");
-  font-weight: 600;
+  src: url("https://doublee.dev/fonts/CopernicusNewCond-090.woff2") format("woff2");
+  font-weight: 300 400;
   font-style: normal;
 }
 @font-face {
@@ -12,44 +12,56 @@
   font-style: normal;
 }
 @font-face {
+  font-family: "Copernicus New Cond";
+  src: url("https://doublee.dev/fonts/CopernicusNewCond-130.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
   font-family: "Neue Montreal";
+  font-style: normal;
+  font-feature-settings: "ss01";
+  /*! Custom adjustments to suit the combination of fonts */
+  ascent-override: 85%;
   src: url("https://doublee.dev/fonts/PPNeueMontreal-Light.woff2") format("woff2");
   font-weight: 300;
-  font-style: normal;
-  /*! Custom adjustments to suit the combination of fonts */
-  ascent-override: 85%;
 }
 @font-face {
   font-family: "Neue Montreal";
+  font-style: normal;
+  font-feature-settings: "ss01";
+  /*! Custom adjustments to suit the combination of fonts */
+  ascent-override: 85%;
   src: url("https://doublee.dev/fonts/PPNeueMontreal-Book.woff2") format("woff2");
   font-weight: 400;
-  font-style: normal;
-  /*! Custom adjustments to suit the combination of fonts */
-  ascent-override: 85%;
 }
 @font-face {
   font-family: "Neue Montreal";
+  font-style: normal;
+  font-feature-settings: "ss01";
+  /*! Custom adjustments to suit the combination of fonts */
+  ascent-override: 85%;
   src: url("https://doublee.dev/fonts/PPNeueMontreal-Italic.woff2") format("woff2");
   font-weight: 400;
   font-style: italic;
-  /*! Custom adjustments to suit the combination of fonts */
-  ascent-override: 85%;
 }
 @font-face {
   font-family: "Neue Montreal";
+  font-style: normal;
+  font-feature-settings: "ss01";
+  /*! Custom adjustments to suit the combination of fonts */
+  ascent-override: 85%;
   src: url("https://doublee.dev/fonts/PPNeueMontreal-Medium.woff2") format("woff2");
   font-weight: 500;
-  font-style: normal;
-  /*! Custom adjustments to suit the combination of fonts */
-  ascent-override: 85%;
 }
 @font-face {
   font-family: "Neue Montreal";
-  src: url("https://doublee.dev/fonts/PPNeueMontreal-SemiBold.woff2") format("woff2");
-  font-weight: 600 700;
   font-style: normal;
+  font-feature-settings: "ss01";
   /*! Custom adjustments to suit the combination of fonts */
   ascent-override: 85%;
+  src: url("https://doublee.dev/fonts/PPNeueMontreal-SemiBold.woff2") format("woff2");
+  font-weight: 600 700;
 }
 @font-face {
   font-family: "Fira Code";
@@ -83,44 +95,44 @@
  * © 2026 MyFonts Inc. */
 @font-face {
   font-family: "Berkeley Old Style";
-  src: local("BerkeleyPro-Book"), url("https://doublee.dev/fonts/BerkeleyOldStyleBook.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 300 400;
   /*! Custom adjustments to suit the combination of fonts */
   size-adjust: 115%;
+  src: local("BerkeleyPro-Book"), url("https://doublee.dev/fonts/BerkeleyOldStyleBook.woff2") format("woff2");
+  font-weight: 300 400;
+  font-style: normal;
 }
 @font-face {
   font-family: "Berkeley Old Style";
-  font-style: italic;
-  font-weight: 300 400;
-  src: local("BerkeleyPro-BookItalic"), url("https://doublee.dev/fonts/BerkeleyOldStyleBookItalic.woff2") format("woff2");
   /*! Custom adjustments to suit the combination of fonts */
   size-adjust: 115%;
+  src: local("BerkeleyPro-BookItalic"), url("https://doublee.dev/fonts/BerkeleyOldStyleBookItalic.woff2") format("woff2");
+  font-weight: 300 400;
+  font-style: italic;
 }
 @media screen and (min-resolution: 150dpi) {
   @font-face {
     font-family: "Berkeley Old Style";
-    src: local("BerkeleyPro-Medium"), url("https://doublee.dev/fonts/BerkeleyOldStyleMedium.woff2") format("woff2");
-    font-style: normal;
-    font-weight: 400;
     /*! Custom adjustments to suit the combination of fonts */
     size-adjust: 115%;
+    src: local("BerkeleyPro-Medium"), url("https://doublee.dev/fonts/BerkeleyOldStyleMedium.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
   }
   @font-face {
     font-family: "Berkeley Old Style";
-    font-style: italic;
-    font-weight: 400;
-    src: local("BerkeleyPro-MediumItalic"), url("https://doublee.dev/fonts/BerkeleyOldStyleMediumItalic.woff2") format("woff2");
     /*! Custom adjustments to suit the combination of fonts */
     size-adjust: 115%;
+    src: local("BerkeleyPro-MediumItalic"), url("https://doublee.dev/fonts/BerkeleyOldStyleMediumItalic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
   }
 }
 @font-face {
   font-family: "Berkeley Old Style";
-  font-weight: 600 700;
-  src: local("BerkeleyPro-Bold"), url("https://doublee.dev/fonts/BerkeleyOldStyleBold.woff2") format("woff2");
   /*! Custom adjustments to suit the combination of fonts */
   size-adjust: 115%;
+  src: local("BerkeleyPro-Bold"), url("https://doublee.dev/fonts/BerkeleyOldStyleBold.woff2") format("woff2");
+  font-weight: 600 700;
 }
 
 /*# sourceMappingURL=doublee-fonts.css.map */

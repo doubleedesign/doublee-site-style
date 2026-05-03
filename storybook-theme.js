@@ -10,7 +10,7 @@ const colors = {
 
 export const doubleeTheme = {
     brandTitle: '',
-    brandImage: null, // TODO: Create default logo
+    brandImage: 'https://doublee.dev/logos/leesa-logo.svg',
     fontBase: "'Neue Montreal', 'Neue Helvetica', 'Helvetica', Arial, sans-serif",
     fontCode: "'Fira Code', ui-monospace",
     colorPrimary: colors.primary,

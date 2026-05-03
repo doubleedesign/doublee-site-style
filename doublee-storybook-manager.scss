@@ -2,6 +2,12 @@
 @use './doublee-prism.scss';
 @use 'functions' as func;
 
+.sidebar-header {
+	img {
+		max-height: 40px;
+	}
+}
+
 #storybook-explorer-tree {
 	button {
 		font-size: var(--font-size-sm);

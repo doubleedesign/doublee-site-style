@@ -3,17 +3,18 @@
   html {
     font-size: var(--font-size-base);
   }
-  :root {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-    font-kerning: normal;
-  }
   body {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: geometricPrecision;
     color: var(--color-body-text);
     font: var(--font-body);
     line-height: var(--line-height-base);
-    letter-spacing: -0.02em;
+    --letter-spacing: body;
+  }
+  @container style(--letter-spacing: body) {
+    letter-spacing: var(--letter-spacing-body);
   }
   @container style(--background-color: dark) {
     * {
@@ -27,11 +28,15 @@
     padding: 0;
   }
   h1, h2, h3, h4, h5, h6 {
+    --letter-spacing: normal;
     font-weight: var(--font-weight-semibold);
     letter-spacing: 0;
   }
   h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
     margin-block-start: 0;
+  }
+  h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+    font-weight: var(--font-weight-normal);
   }
   h1, h2 {
     margin-block-end: var(--spacing-sm);
@@ -60,11 +65,16 @@
     font: var(--font-md);
     font-size: var(--font-size-base);
   }
-  p, ul, ol {
-    margin-block: var(--spacing-md);
-  }
   strong {
     font-weight: var(--font-weight-bold);
+  }
+  @container style(--letter-spacing: body) {
+    strong {
+      letter-spacing: var(--letter-spacing-tight);
+    }
+  }
+  p, ul, ol {
+    margin-block: var(--spacing-md);
   }
   ul, ol {
     margin-inline-start: var(--spacing-md);
@@ -194,6 +204,9 @@
     color: var(--color-body-text-muted);
     opacity: 0.4;
     margin: var(--spacing-lg) 0;
+  }
+  mfrac {
+    font-feature-settings: "frac";
   }
 }
 

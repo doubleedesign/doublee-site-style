@@ -13,9 +13,14 @@
 		--font-weight-semibold: 600;
 		--font-weight-bold: 700;
 
+		--typescale: 1.2;
 		--line-height-base: 1.6;
 		--line-height-headings: 1.2;
-		--typescale: 1.2;
+		--letter-spacing-body: -0.01em;
+		--letter-spacing-tight: -0.02em;
+		// Note: Set --letter-spacing var to "body" or "normal" at container level and use container style queries
+		// to apply tighter spacing selectively based on that,
+		// e.g. tighter in <strong> if <p> has "body" --letter-spacing but not in <h2> with "normal" --letter-spacing.
 
 		@media (min-width: 768px) {
 			--typescale: 1.25;
@@ -57,9 +62,9 @@
 		--border-radius-md: var(--spacing-sm);
 		--border-radius-round: 100px;
 
-		--color-primary: #845ec2;
-		--color-secondary: #0abfa0;
-		--color-accent: #c92c5a;
+		--color-primary: #502595;
+		--color-secondary: #845ec2;
+		--color-accent: #b01b87;
 		--color-info: #24a8e1;
 		--color-warning: #ffc75f;
 		--color-success: #0abfa0;
