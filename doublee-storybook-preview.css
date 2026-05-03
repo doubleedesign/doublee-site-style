@@ -73,6 +73,7 @@
 .prismjs {
   background: #181825;
   color: white;
+  tab-size: 2;
 }
 .prismjs * {
   font-family: "Fira Code", monospace;
@@ -204,6 +205,7 @@
 [id*="tabpanel-storybook/html/panel"] .prismjs {
   background: #181825;
   color: white;
+  tab-size: 2;
 }
 .docblock-source .prismjs *,
 .docs-story + div .prismjs *,
@@ -428,8 +430,29 @@
 .sbdocs-content p, .sbdocs-content li {
   font-size: var(--font-size-base);
 }
+.sbdocs-content a.sbdocs-a {
+  color: currentColor !important;
+}
+.sbdocs-content a.sbdocs-a:hover, .sbdocs-content a.sbdocs-a:focus, .sbdocs-content a.sbdocs-a:active {
+  color: var(--color-accent) !important;
+}
 .sbdocs-content .docblock-argstable-body {
   font-size: var(--font-size-sm);
+}
+.sbdocs-content .docblock-source div:has(button) {
+  background: transparent;
+}
+.sbdocs-content .docblock-source button {
+  color: var(--color-light);
+  background: rgba(255, 255, 255, 0.15);
+  font-weight: var(--font-weight-medium);
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+.sbdocs-content .docblock-source button:hover, .sbdocs-content .docblock-source button:focus, .sbdocs-content .docblock-source button:active {
+  text-decoration-color: currentColor;
+  background: var(--color-accent);
 }
 
 /*# sourceMappingURL=doublee-storybook-preview.css.map */

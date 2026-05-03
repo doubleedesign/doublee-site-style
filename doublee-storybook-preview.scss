@@ -12,12 +12,39 @@
 		font: var(--font-md);
 	}
 
-
 	p, li {
 		font-size: var(--font-size-base);
 	}
 
+	a.sbdocs-a {
+		color: currentColor !important;
+
+		&:hover, &:focus, &:active {
+			color: var(--color-accent) !important;
+		}
+	}
+
 	.docblock-argstable-body {
 		font-size: var(--font-size-sm);
+	}
+
+	.docblock-source {
+		div:has(button) {
+			background: transparent;
+		}
+
+		button {
+			color: var(--color-light);
+			background: rgba(255, 255, 255, 0.15);
+			font-weight: var(--font-weight-medium);
+			text-decoration: underline;
+			text-decoration-color: transparent;
+			transition: all 0.2s ease-in-out;
+
+			&:hover, &:focus, &:active {
+				text-decoration-color: currentColor;
+				background: var(--color-accent);
+			}
+		}
 	}
 }

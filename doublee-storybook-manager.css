@@ -73,6 +73,7 @@
 .prismjs {
   background: #181825;
   color: white;
+  tab-size: 2;
 }
 .prismjs * {
   font-family: "Fira Code", monospace;
@@ -204,6 +205,7 @@
 [id*="tabpanel-storybook/html/panel"] .prismjs {
   background: #181825;
   color: white;
+  tab-size: 2;
 }
 .docblock-source .prismjs *,
 .docs-story + div .prismjs *,

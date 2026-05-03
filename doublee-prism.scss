@@ -1,6 +1,7 @@
 @mixin prism-theme {
 	background: #181825;
 	color: white;
+	tab-size: 2;
 
 	* {
 		font-family: 'Fira Code', monospace;

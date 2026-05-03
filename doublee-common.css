@@ -90,7 +90,7 @@
     color: currentColor;
   }
   a:hover, a:focus, a:active {
-    color: var(--color-primary);
+    color: var(--color-accent);
   }
   button {
     font: var(--font-labels);

@@ -6,9 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="6b0a1940-71e3-4562-ab40-faa17ea47822" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doublee-common.css" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doublee-common.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-common.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doublee-common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-common.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doublee-prism.css" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-prism.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doublee-prism.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-prism.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doublee-prism.scss" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-prism.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doublee-storybook-manager.css" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-storybook-manager.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doublee-storybook-manager.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-storybook-manager.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doublee-storybook-manager.scss" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-storybook-manager.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doublee-storybook-preview.css" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-storybook-preview.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doublee-storybook-preview.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-storybook-preview.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doublee-storybook-preview.scss" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-storybook-preview.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +127,7 @@
       <workItem from="1777690275268" duration="11752000" />
       <workItem from="1777704668328" duration="1708000" />
       <workItem from="1777708040332" duration="11839000" />
-      <workItem from="1777766985216" duration="12753000" />
+      <workItem from="1777766985216" duration="15353000" />
     </task>
     <servers />
   </component>
