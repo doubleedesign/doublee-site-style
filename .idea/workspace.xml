@@ -5,18 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b0a1940-71e3-4562-ab40-faa17ea47822" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/test/setup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/spacing-swatch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/tokens.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/utils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_functions.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_functions.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doublee-common.css" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doublee-common.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-common.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doublee-common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-common.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doublee-prism.css" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-prism.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doublee-prism.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-prism.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doublee-storybook-manager.css" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-storybook-manager.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doublee-storybook-manager.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-storybook-manager.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doublee-storybook-preview.css" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-storybook-preview.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doublee-storybook-preview.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-storybook-preview.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doublee-tokens.css" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-tokens.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doublee-tokens.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-tokens.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doublee-tokens.scss" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-tokens.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/color-swatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/color-swatch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/demo.css" beforeDir="false" afterPath="$PROJECT_DIR$/test/demo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/demo.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/test/demo.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/demo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/test/demo.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/docs.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/docs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/font-swatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/font-swatch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

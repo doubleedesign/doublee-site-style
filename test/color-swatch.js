@@ -10,6 +10,7 @@
  *   <color-swatch color="secondary"></color-swatch>
  *   <color-swatch color="accent"></color-swatch>
  */
+import {getValueOfCssVariable} from "/test/utils.js";
 
 class ColorSwatch extends HTMLElement {
     static get observedAttributes() {
@@ -27,9 +28,7 @@ class ColorSwatch extends HTMLElement {
     render() {
         const token = (this.getAttribute('color') || '').trim();
         const varName = `--color-${token}`;
-        const value = getComputedStyle(document.documentElement)
-            .getPropertyValue(varName)
-            .trim();
+        const value = getValueOfCssVariable(varName);
 
         const swatch = document.createElement('figure');
         swatch.className = 'swatch';

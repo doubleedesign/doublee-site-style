@@ -10,49 +10,8 @@
     <script src="color-swatch.js"></script>
     <script src="font-swatch.js"></script>
     <script src="generic-swatch.js"></script>
-    <script type="module">
-        import {TypographersQuotes} from '../node_modules/@doubleedesign/clientside-typographers-quotes/dist/TypographersQuotes.js';
-
-        setTimeout(() => {
-            createColourPalette();
-            createTypePalette();
-            quotify();
-        }, 50);
-
-        function createColourPalette() {
-            const palette = document.getElementById('palette');
-            if (!palette) return;
-
-            const colours = [
-                'accent', 'primary', 'secondary',
-                'light', 'dark',
-                'info', 'success', 'warning', 'error',
-                'body-text', 'body-text-muted',
-            ];
-            colours.forEach(colour => {
-                const element = document.createElement('color-swatch');
-                element.setAttribute('color', colour);
-                palette.appendChild(element);
-            });
-        }
-
-        function createTypePalette() {
-            const palette = document.getElementById('typography');
-            if (!palette) return;
-
-            const fonts = ['sm', 'body', 'md', 'lg', 'xl', 'xxl', 'display'];
-            fonts.forEach(size => {
-                const element = document.createElement('font-swatch');
-                element.setAttribute('size', size);
-                palette.appendChild(element);
-            });
-        }
-
-        function quotify() {
-            const quotes = new TypographersQuotes({selectors: ['body']});
-            quotes.apply();
-        }
-    </script>
+    <script src="spacing-swatch.js"></script>
+    <script type="module" src="setup.js"></script>
 </head>
 <body>
 
@@ -139,15 +98,9 @@
 <hr/>
 
 <section>
-    <h2>Colour Palette</h2>
-    <div id="palette"></div>
-
-    <h2>Typography</h2>
-
     <h3>Base</h3>
     <p>Base font styling tokens that use the CSS <code>font</code> shorthand to combine intended base size, weight, and family combinations.</p>
     <div id="typography"></div>
-
     <h3>Structural</h3>
     <p>Base styling for specific HTML elements.</p>
     <div id="formatting">

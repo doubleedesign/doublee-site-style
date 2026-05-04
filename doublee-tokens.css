@@ -10,11 +10,12 @@
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
-    --typescale: 1.2;
     --line-height-base: 1.6;
     --line-height-headings: 1.2;
     --letter-spacing-body: -0.01em;
     --letter-spacing-tight: -0.02em;
+    --typescale: 1.2;
+    --spacing-step-size: 3;
   }
   @media (min-width: 768px) {
     :root {
@@ -32,11 +33,11 @@
   :root {
     --font-size-sm: 0.9rem;
     --font-size-body: 1rem;
-    --font-size-md: calc(1rem * var(--typescale));
-    --font-size-lg: calc(calc(1rem * var(--typescale)) * var(--typescale));
-    --font-size-xl: calc(calc(calc(1rem * var(--typescale)) * var(--typescale)) * var(--typescale));
-    --font-size-xxl: calc(calc(calc(calc(1rem * var(--typescale)) * var(--typescale)) * var(--typescale)) * var(--typescale));
-    --font-size-display: calc(calc(calc(calc(calc(calc(1rem * var(--typescale)) * var(--typescale)) * var(--typescale)) * var(--typescale)) * var(--typescale)) * var(--typescale));
+    --font-size-md: calc(1rem * pow(var(--typescale), 1));
+    --font-size-lg: calc(1rem * pow(var(--typescale), 2));
+    --font-size-xl: calc(1rem * pow(var(--typescale), 3));
+    --font-size-xxl: calc(1rem * pow(var(--typescale), 4));
+    --font-size-display: calc(1rem * pow(var(--typescale), 6));
     --font-sm: var(--font-weight-normal) var(--font-size-sm) var(--font-family-labels);
     --font-body: var(--font-weight-normal) var(--font-size-body) var(--font-family-body);
     --font-md: var(--font-weight-medium) var(--font-size-md)/var(--line-height-headings) var(--font-family-accent);
@@ -46,13 +47,12 @@
     --font-display: var(--font-weight-semibold) var(--font-size-display)/var(--line-height-headings) var(--font-family-headings);
     --font-labels: var(--font-weight-medium) var(--font-size-sm) var(--font-family-labels);
     --font-captions: var(--font-weight-normal) var(--font-size-sm) var(--font-family-labels);
-    --spacing-xxs: calc(calc(calc(calc(calc(calc(1rem / var(--typescale)) / var(--typescale)) / var(--typescale)) / var(--typescale)) / var(--typescale)) / var(--typescale));
-    --spacing-xs: calc(calc(calc(calc(1rem / var(--typescale)) / var(--typescale)) / var(--typescale)) / var(--typescale));
-    --spacing-sm: calc(calc(1rem / var(--typescale)) / var(--typescale));
+    --spacing-xs: calc(1rem / pow(var(--typescale), 2 * var(--spacing-step-size)));
+    --spacing-sm: calc(1rem / pow(var(--typescale), 1 * var(--spacing-step-size)));
     --spacing-md: 1rem;
-    --spacing-lg: calc(calc(1rem * var(--typescale)) * var(--typescale));
-    --spacing-xl: calc(calc(calc(calc(1rem * var(--typescale)) * var(--typescale)) * var(--typescale)) * var(--typescale));
-    --spacing-xxl: calc(calc(calc(calc(calc(calc(1rem * var(--typescale)) * var(--typescale)) * var(--typescale)) * var(--typescale)) * var(--typescale)) * var(--typescale));
+    --spacing-lg: calc(1rem * pow(var(--typescale), 1 * var(--spacing-step-size)));
+    --spacing-xl: calc(1rem * pow(var(--typescale), 2 * var(--spacing-step-size)));
+    --spacing-xxl: calc(1rem * pow(var(--typescale), 3 * var(--spacing-step-size)));
     --border-radius-sm: var(--spacing-xs);
     --border-radius-md: var(--spacing-sm);
     --border-radius-round: 100px;

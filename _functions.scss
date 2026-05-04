@@ -28,18 +28,14 @@
 }
 
 // Sizing calculation functions
-@function step-up($steps) {
+@function step-up($steps, $multiplier: 1) {
 	$result: 1rem;
-	@for $i from 1 through $steps {
-		$result: calc(#{$result} * var(--typescale));
-	}
-	@return $result;
+
+	@return calc(#{$result} * pow(var(--typescale), $steps * $multiplier));
 }
 
-@function step-down($steps) {
+@function step-down($steps, $multiplier: 1) {
 	$result: 1rem;
-	@for $i from 1 through $steps {
-		$result: calc(#{$result} / var(--typescale));
-	}
-	@return $result;
+
+	@return calc(#{$result} / pow(var(--typescale), $steps * $multiplier));
 }

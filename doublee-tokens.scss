@@ -13,7 +13,6 @@
 		--font-weight-semibold: 600;
 		--font-weight-bold: 700;
 
-		--typescale: 1.2;
 		--line-height-base: 1.6;
 		--line-height-headings: 1.2;
 		--letter-spacing-body: -0.01em;
@@ -22,6 +21,8 @@
 		// to apply tighter spacing selectively based on that,
 		// e.g. tighter in <strong> if <p> has "body" --letter-spacing but not in <h2> with "normal" --letter-spacing.
 
+		--typescale: 1.2;
+		--spacing-step-size: 3;
 		@media (min-width: 768px) {
 			--typescale: 1.25;
 		}
@@ -50,13 +51,12 @@
 		--font-labels: var(--font-weight-medium) var(--font-size-sm) var(--font-family-labels);
 		--font-captions: var(--font-weight-normal) var(--font-size-sm) var(--font-family-labels);
 
-		--spacing-xxs: #{func.step-down(6)};
-		--spacing-xs: #{func.step-down(4)};
-		--spacing-sm: #{func.step-down(2)};
+		--spacing-xs: #{func.step-down(2, var(--spacing-step-size))};
+		--spacing-sm: #{func.step-down(1, var(--spacing-step-size))};
 		--spacing-md: 1rem;
-		--spacing-lg: #{func.step-up(2)};
-		--spacing-xl: #{func.step-up(4)};
-		--spacing-xxl: #{func.step-up(6)};
+		--spacing-lg: #{func.step-up(1, var(--spacing-step-size))};
+		--spacing-xl: #{func.step-up(2, var(--spacing-step-size))};
+		--spacing-xxl: #{func.step-up(3, var(--spacing-step-size))};
 
 		--border-radius-sm: var(--spacing-xs);
 		--border-radius-md: var(--spacing-sm);

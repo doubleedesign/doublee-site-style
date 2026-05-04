@@ -24,7 +24,7 @@ body {
 		&__label, &__value {
 			display: block;
 			font-family: var(--font-family-labels);
-			margin: var(--spacing-xxs);
+			margin: var(--spacing-xs);
 		}
 
 		&__label {
@@ -69,6 +69,47 @@ body {
 	.swatch {
 		&__color {
 			height: 100px;
+		}
+	}
+}
+
+#spacing {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: var(--spacing-md);
+	margin-block-end: var(--spacing-xl);
+
+	generic-swatch,
+	.swatch {
+		padding: 1rem;
+	}
+
+	generic-swatch {
+		font-family: var(--font-family-labels);
+	}
+
+	spacing-swatch {
+		grid-column: span 2;
+	}
+
+	.swatch {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+
+		&__spacing {
+			display: block;
+			height: 3rem;
+			background: var(--color-light);
+			border-inline: 1px solid var(--color-body-text-muted);
+		}
+
+		&__caption {
+			grid-column: span 5;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: flex-start;
+			margin: 0;
 		}
 	}
 }

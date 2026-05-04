@@ -10,6 +10,7 @@
  *   <font-swatch size="md"></font-swatch>
  *   <font-swatch size="xl"></font-swatch>
  */
+import {getValueOfCssVariable} from "/test/utils.js";
 
 class FontSwatch extends HTMLElement {
     static get observedAttributes() {
@@ -27,9 +28,7 @@ class FontSwatch extends HTMLElement {
     render() {
         const token = (this.getAttribute('size') || '').trim();
         const varName = `--font-${token}`;
-        const value = getComputedStyle(document.documentElement)
-            .getPropertyValue(varName)
-            .trim();
+        const value = getValueOfCssVariable(varName);
 
         const swatch = document.createElement('figure');
         swatch.className = 'swatch';
