@@ -74,6 +74,15 @@
 		--color-white: #ffffff;
 		--color-body-text: #181825;
 		--color-body-text-muted: #{func.mute-color(body-text, 0.2, 0.35)};
+
+		$colorNames: (primary, secondary, accent, light, dark, white);
+		@each $colorName in $colorNames {
+			@each $colorName2 in $colorNames {
+				@if $colorName != $colorName2 {
+					--gradient-#{$colorName}-#{$colorName2}: linear-gradient(to bottom, var(--color-#{$colorName}) 50%, var(--color-#{$colorName2}) 50%);
+				}
+			}
+		}
 	}
 
 	[data-typography-mode="docs"] {
