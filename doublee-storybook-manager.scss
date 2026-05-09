@@ -60,3 +60,10 @@
 		}
 	}
 }
+
+#storybook-panel-region {
+	[id*="tabpanel-storybook/html/panel"] .prismjs * {
+		font-size: 0.8rem;
+		line-height: 1.6;
+	}
+}
