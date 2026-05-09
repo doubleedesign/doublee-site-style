@@ -66,6 +66,9 @@
     font-weight: var(--font-weight-medium);
     margin-block-start: var(--spacing-lg);
   }
+  [data-typography-mode=docs] h3 {
+    font-weight: var(--font-weight-semibold);
+  }
   h4, h5, h6 {
     font: var(--font-md);
     font-size: var(--font-size-base);

@@ -88,6 +88,9 @@
 	[data-typography-mode="docs"] {
 		--font-family-headings: 'Neue Montreal', 'Neue Helvetica', Helvetica, Arial, sans-serif;
 		--font-family-body: 'Neue Montreal', 'Neue Helvetica', Helvetica, Arial, sans-serif;
+		--font-size-base: 1rem;
+		--line-height-base: 1.7;
+		--typescale: 1.2;
 		--font-body: var(--font-weight-normal) var(--font-size-body) var(--font-family-body);
 		--font-md: var(--font-weight-medium) var(--font-size-body) var(--font-family-accent);
 		--font-lg: var(--font-weight-semibold) var(--font-size-md) var(--font-family-headings);

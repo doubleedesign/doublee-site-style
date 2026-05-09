@@ -3,7 +3,7 @@
 	"description": "Shared CSS, Storybook theme, and other portfolio-site-related stuff to enable easy sharing across my personal sites",
 	"author": "Leesa Ward",
 	"license": "UNLICENSED",
-	"version": "1.1.3",
+	"version": "1.1.4",
 	"main": "index.js",
 	"private": true,
 	"dependencies": {
