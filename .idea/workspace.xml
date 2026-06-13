@@ -6,23 +6,37 @@
   <component name="ChangeListManager">
     <list default="true" id="6b0a1940-71e3-4562-ab40-faa17ea47822" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doublee-common.css" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doublee-common.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-common.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doublee-common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-common.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doublee-prism.css" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-prism.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doublee-prism.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-prism.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doublee-prism.scss" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-prism.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doublee-storybook-manager.css" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-storybook-manager.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doublee-storybook-manager.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-storybook-manager.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doublee-storybook-preview.css" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-storybook-preview.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doublee-storybook-preview.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-storybook-preview.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doublee-tokens.css" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-tokens.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doublee-tokens.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-tokens.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doublee-tokens.scss" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-tokens.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/docs.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/docs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doublee-storybook-preview.scss" beforeDir="false" afterPath="$PROJECT_DIR$/doublee-storybook-preview.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotChats">
+    <option name="panelChat">
+      <chat>
+        <option name="activeSessionId" value="4d336303-aa64-49a8-806c-c96827f90bcc" />
+        <option name="sessions">
+          <session>
+            <option name="chatType" value="PANEL" />
+            <option name="id" value="4d336303-aa64-49a8-806c-c96827f90bcc" />
+            <option name="modeId" value="Agent" />
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="auto" />
+            <option name="targetType" value="LOCAL" />
+          </session>
+        </option>
+        <option name="type" value="PANEL" />
+      </chat>
+    </option>
   </component>
   <component name="CopilotPersistence">
     <persistenceIdMap>
@@ -109,7 +123,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-WS-261.23567.141" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-WS-261.24374.125" />
       </set>
     </attachedChunks>
   </component>
@@ -132,7 +146,9 @@
       <workItem from="1777766985216" duration="17805000" />
       <workItem from="1777938828210" duration="3320000" />
       <workItem from="1778289770605" duration="498000" />
-      <workItem from="1778290874581" duration="2678000" />
+      <workItem from="1778290874581" duration="5076000" />
+      <workItem from="1780719203892" duration="15000" />
+      <workItem from="1781319505427" duration="1313000" />
     </task>
     <servers />
   </component>

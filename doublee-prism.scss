@@ -150,8 +150,10 @@
 	}
 }
 
-.prismjs {
-	@include prism-theme();
+@layer doublee-prism-theme {
+	.prismjs {
+		@include prism-theme();
+	}
 }
 
 // Extra specificity needed for Storybook usages

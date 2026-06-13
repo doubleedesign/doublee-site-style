@@ -1,72 +1,74 @@
 @use './doublee-tokens.scss';
 @use './doublee-prism.scss';
 
-.sbdocs-content {
+@layer doublee-storybook-preview {
+	.sbdocs-content {
 
-	h2, h3 {
-		border: 0;
-		margin: revert-layer !important;
-		padding: revert-layer;
-	}
-
-	h2 {
-
-	}
-
-	code {
-		font-size: inherit !important;
-		font-family: var(--font-family-code) !important;
-	}
-
-	p, li {
-		font-size: var(--font-size-body);
-	}
-
-	a {
-		font-family: inherit !important;
-		color: currentColor;
-
-		&:hover, &:focus, &:active {
-			color: var(--color-accent);
-		}
-	}
-
-	pre:has(.prismjs) {
-		margin: 0;
-		padding: 0;
-	}
-
-	.docblock-argstable-body {
-		font-size: var(--font-size-sm);
-	}
-
-
-	pre:has(.docblock-source) {
-		width: 100%;
-	}
-
-	div:has(.prismjs) {
-		font-size: 1rem;
-	}
-
-	.docblock-source {
-		margin: 0 !important;
-
-		div:has(button) {
-			background: transparent;
+		h2, h3 {
+			border: 0;
+			margin: revert-layer !important;
+			padding: revert-layer;
 		}
 
-		button {
-			color: var(--color-light);
-			background: rgba(255, 255, 255, 0.15);
-			font-weight: var(--font-weight-medium);
-			text-decoration: underline;
-			text-decoration-color: transparent;
-			transition: all 0.2s ease-in-out;
+		h2 {
+
+		}
+
+		code {
+			font-size: inherit !important;
+			font-family: var(--font-family-code) !important;
+		}
+
+		p, li {
+			font-size: var(--font-size-body);
+		}
+
+		a {
+			font-family: inherit !important;
+			color: currentColor;
 
 			&:hover, &:focus, &:active {
-				text-decoration-color: currentColor;
-				background: var(--color-accent);
+				color: var(--color-accent);
+			}
+		}
+
+		pre:has(.prismjs) {
+			margin: 0;
+			padding: 0;
+		}
+
+		.docblock-argstable-body {
+			font-size: var(--font-size-sm);
+		}
+
+
+		pre:has(.docblock-source) {
+			width: 100%;
+		}
+
+		div:has(.prismjs) {
+			font-size: 1rem;
+		}
+
+		.docblock-source {
+			margin: 0 !important;
+
+			div:has(button) {
+				background: transparent;
+			}
+
+			button {
+				color: var(--color-light);
+				background: rgba(255, 255, 255, 0.15);
+				font-weight: var(--font-weight-medium);
+				text-decoration: underline;
+				text-decoration-color: transparent;
+				transition: all 0.2s ease-in-out;
+
+				&:hover, &:focus, &:active {
+					text-decoration-color: currentColor;
+					background: var(--color-accent);
+				}
 			}
 		}
 	}
